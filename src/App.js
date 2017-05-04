@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 var request = require('superagent');
-import { getHealth } from './APIService';
 
 class App extends React.Component {
     constructor(props) {
