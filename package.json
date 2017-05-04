@@ -5,10 +5,9 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "react": "^15.5.4",
+    "react-addons-create-fragment": "^15.5.3",
     "react-dom": "^15.5.4",
-    "react-superagent": "^1.1.1",
-    "superagent": "^3.5.2",
-    "superagent-bluebird-promise": "^4.2.0"
+    "superagent": "^3.5.2"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

@@ -1,5 +1,16 @@
-var request = require('superagent-bluebird-promise');
+var request = require('superagent');
 
-export function getAll(){
-    return request.get('https://sit-pricing-service.core-services.myob.com/public/health').promise();
+export function getHealth(url) {
+    request
+        .get(url)
+        .end(function(err, res){
+            if(err || !res.ok){
+                alert('Error getting health: ' + err);
+            }
+            else{
+                console.log(5);
+                console.log(res);
+                return(res.body);
+            }
+        });
 }
